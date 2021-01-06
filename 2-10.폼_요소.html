@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>form</title>
+	</head>
+	<body>
+		<form action="/test.html" method="post">
+			<h1>Form 관련 요소</h1>
+
+			<fieldset>
+				<legend>기본정보</legend>
+
+				<label for="userId">아이디</label>
+				<input type="text" placeholder="영문 입력" id="userId">
+				<br>
+
+				<label for="userPwd">비밀번호</label>
+				<input type="password" placeholder="비밀번호 입력" id="userPwd">
+				<br>
+
+				성별
+				<label for="female">여자</label><input type="radio" name="gender" id="female" checked>
+				<label for="male">남자</label><input type="radio" name="gender" id="male">
+				<br>
+			</fieldset>
+
+			<fieldset>
+				<legend>부가정보</legend>
+				취미
+				<label for="reading">독서</label><input type="checkbox" name="hobby" id="reading">
+				<label for="exercise">운동</label><input type="checkbox" name="hobby" id="exercise"> 
+				<label for="music">음악감상</label><input type="checkbox" name="hobby" id="music">
+				<br>
+
+				<label for="profile">프로필사진 업로드</label>
+				<input type="file" id="profile">
+				<br>
+
+				<label for="area">지역</label>
+				<select id="area">
+					<option>서울</option>
+					<option selected>경기</option>
+					<option>강원</option>
+				</select>
+				<br>
+
+				<label for="about">자기소개</label>
+				<textarea rows="3" col="7" placeholder="간략한 소개글 입력" id="about"></textarea>
+			</fieldset>
+			
+			<input type="submit" value="전송">
+			<input type="reset" value="취소">
+			<input type="button" value="등록">
+			<input type="image" src="./dog.jpg" alt="로그인" width="40" height="30">
+			<br>
+
+			<button type="submit">전송</button>
+			<button type="reset">취소</button>
+			<button type="button">등록</button>
+			<button type="submit"><img src="./dog.jpg" alt="로그인" width="40" height="30"></button>
+		</form>
+	</body>
+</html>
