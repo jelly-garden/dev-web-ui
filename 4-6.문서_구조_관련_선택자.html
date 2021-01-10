@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+        <title>문서 구조 관련 선택자</title>
+        <style>
+            /* 1.자식 선택자 */
+            /* div > span { color: red; } */
+
+            /* 2.자손 선택자 */
+            /* div span { color: red; } */
+
+            /* 3.형제 선택자 */
+            div + p { color: red; }
+            div ~ p { color: red; }
+        </style>
+	</head>
+	<body>
+        <p>p tag 1</p>
+        <div>
+            <h1><span>HTML</span>: Hyper Text Markup Language</h1>
+            <span>CSS는 문서를 꾸며줍니다</span>
+        </div>
+        <span>span tag</span>
+        <p>p tag 2</p>
+    </body>
+</html>

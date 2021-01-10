@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>상속</title>
+	<style>
+		/* h1 { color: gray; } */
+        * { color: red; }
+        h1#page { color: gray; }
+
+        /* 퀴즈 */
+        .wrap { color: orange !important; }
+        .wrap div { color: red; }
+        .box { color: green !important; }
+        .wrap .box { color: blue; }
+	</style>
+</head>
+<body>
+    <!-- <h1>Hello, <em>CSS</em></h1> -->
+    <h1 id="page">Hello, <em>CSS</em></h1>
+
+    <!-- 퀴즈 -->
+    <div class="wrap">
+        <div class="box">box</div> 
+    </div>
+</body>
+</html>

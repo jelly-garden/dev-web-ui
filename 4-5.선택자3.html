@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+        <title>속성 선택자</title>
+        <style>
+            /* 1. 단순 속성으로 선택 */
+            /* p[class] { color: silver; }
+            p[class][id] { text-decoration: underline; } */
+
+            /* 2. 정확한 속성값으로 선택 */
+            /* p[class="foo"] { color: silver; }
+            p[id="title"] { text-decoration: underline; } */
+
+            /* 3. 부분 속성값으로 선택 */
+            /* p[class="color"] { color: red; } */
+            p[class~="color"] { color: red; }
+            /* p[class^="color"] { color: red; } */
+            /* p[class$="color"] { color: red; } */
+            /* p[class*="color"] { color: red; } */
+        </style>
+	</head>
+	<body>
+        <!-- <p class="foo">Hello</p>
+        <p class="bar">CSS</p>
+        <p class="baz" id="title">HTML</p> -->
+
+        <p class="color hot">red</p>
+        <p class="cool color">blue</p>
+        <p class="colorful nature">rainbow</p>
+	</body>
+</html>
